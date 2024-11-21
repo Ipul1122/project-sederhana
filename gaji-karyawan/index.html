@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hitung Gaji Karyawan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Hitung Gaji Mingguan Karyawan</h1>
+    <form id="gajiForm">
+      <label for="nama">Nama Karyawan:</label>
+      <input type="text" id="nama" name="nama" required>
+
+      <label for="golongan">Golongan:</label>
+      <select id="golongan" name="golongan" required>
+        <option value="">Pilih Golongan</option>
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+        <option value="D">D</option>
+      </select>
+
+      <label for="jamKerja">Jumlah Jam Kerja:</label>
+      <input type="number" id="jamKerja" name="jamKerja" required min="0">
+
+      <button type="submit">Hitung Gaji</button>
+    </form>
+    <div id="hasil" class="hasil">
+      <h2>Hasil:</h2>
+      <p id="namaHasil"></p>
+      <p id="gajiHasil"></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

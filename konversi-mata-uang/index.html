@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Konversi Mata Uang</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Konversi Mata Uang</h1>
+    <div class="converter">
+      <label for="amount">Masukkan Jumlah:</label>
+      <input type="text" id="amount" placeholder="Contoh: 30.000Rp atau 20.5$" />
+      
+      <label for="currency">Pilih Mata Uang:</label>
+      <select id="currency">
+        <option value="usd-to-idr">Dollar ke Rupiah</option>
+        <option value="idr-to-usd">Rupiah ke Dollar</option>
+      </select>
+      
+      <button onclick="convertCurrency()">Konversi</button>
+      
+      <p id="result"></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
